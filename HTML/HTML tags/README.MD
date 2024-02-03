@@ -1,1 +1,1 @@
-![index.html](./assets/screen_capture.png)]
+![index.html](./assets/screen_capture.png)
