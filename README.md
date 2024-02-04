@@ -1,5 +1,7 @@
 # web-dev-training-sr41
 
+This Repository is Created and Maintaining by **Masna, Harindra** on behalf of **Odinschool**
+
 [Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/odinharindra/web-dev-training-sr41)
 
 # Odinschool
