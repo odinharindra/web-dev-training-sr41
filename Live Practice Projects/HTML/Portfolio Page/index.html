@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe's Resume</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>John Doe</h1>
+      <p>Web Developer</p>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about_me">About Me</a>
+          </li>
+          <li>
+            <a href="#communication_information">Communication Information</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#work_experience">Work Experience</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about_me">
+        <img src="./assets/john_doe.png" alt="John Doe" width="200" />
+        <br />
+        <br />
+
+        <audio controls>
+          <source src="./assets/intro.mp3" type="audio/mpeg" />
+        </audio>
+        <br />
+        <br />
+
+        <video controls width="720">
+          <source src="./assets/interview.mp4" type="video/mp4" />
+          <source src="./assets/interview.webm" type="video/webm" />
+        </video>
+      </section>
+
+      <section class="section" id="communication_information">
+        <h2>Communication Information</h2>
+        <ul>
+          <li>Email: john.doe@example.com</li>
+          <li>Phone: (555) 123-4567</li>
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/johndoe/" target="_blank"
+              >linkedin.com/in/johndoe</a
+            >
+          </li>
+          <li>
+            GitHub: <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+              <th>Year of Completion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bachelor of Science in Computer Science</td>
+              <td>University of Example</td>
+              <td>20XX</td>
+            </tr>
+            <tr>
+              <td>High School Diploma</td>
+              <td>City High School</td>
+              <td>20XX</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section" id="work_experience">
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            <strong>Web Developer</strong> - ABC Tech Solutions
+            <ul>
+              <li>Developed and maintained client websites using HTML, CSS, and JavaScript.</li>
+              <li>
+                Collaborated with cross-functional teams to deliver high-quality projects on time.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Intern</strong> - XYZ Software Company
+            <ul>
+              <li>Gained hands-on experience in software development and debugging.</li>
+              <li>Assisted in the implementation of new features and enhancements.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Node.js</li>
+          <li>Git, GitHub</li>
+          <li>Responsive Web Design</li>
+        </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>Portfolio Website</strong>
+            <ul>
+              <li>
+                Designed and developed a personal portfolio website to showcase projects and skills.
+              </li>
+              <li>Implemented responsive design for optimal viewing on various devices.</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Task Management App</strong>
+            <ul>
+              <li>Created a task management application using React and Node.js.</li>
+              <li>Implemented features for adding, editing, and deleting tasks.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="8b8fb1f8-37cb-4a6e-8fe8-be66dc091fe8" />
+
+          <label for="name">strong</label> <br />
+          <input type="text" name="name" id="name" /><br /><br />
+
+          <label for="email">Email:</label><br />
+          <input type="email" name="email" id="email1" /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea name="message" id="message" cols="25" rows="4"></textarea><br /><br />
+
+          <label for="purpose">Purpose:</label> <br />
+          <select name="purpose" id="purpose">
+            <option value="job">Job purpose</option>
+            <option value="training">Training purpose</option>
+          </select>
+          <br /><br />
+
+          <input type="checkbox" name="preference" id="preference" />
+          <label for="preference"> Prefer to ignore if not interested </label>
+          <br /><br />
+
+          <input type="submit" value="Send" />
+          <br /><br />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 20XX John Doe. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
