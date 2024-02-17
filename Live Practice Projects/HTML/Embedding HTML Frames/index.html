@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embedding HTML Frames</title>
+  </head>
+  <body style="padding: 0">
+    <p>Please checkout this awesome video <br /></p>
+    <!-- Embedding a youtube video -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/y8YH0Qbu5h4?si=lboFGg5ClRvq-hhr"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Embedding a local sibling page using <iframe> tag -->
+    <iframe width="720p" height="500" src="./page_with_video.html" frameborder="0"></iframe>
+  </body>
+</html>
