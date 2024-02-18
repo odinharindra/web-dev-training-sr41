@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Cards</title>
     <style>
-      * {
+      /* * {
         box-sizing: border-box;
         position: relative;
-      }
+      } */
 
       .card {
         width: 250px; /* 250px width */
@@ -25,7 +25,11 @@
         /* 400px + 10px + 32px = 442px */
       }
 
-      .card-2 {
+      .card:hover {
+        border-color: greenyellow;
+      }
+
+      .card:nth-child(2) {
         box-sizing: border-box;
       }
 
@@ -48,7 +52,7 @@
       <h2 style="text-align: left">Sub title of my card</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <div class="card card-2">
+    <div class="card">
       <img
         src="https://source.unsplash.com/400x300/?nature,water"
         alt="Nature"
