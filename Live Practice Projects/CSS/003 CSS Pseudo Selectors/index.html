@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      button {
+        background-color: #0f4bba;
+        color: white;
+        font-size: 24px;
+        padding: 16px;
+      }
+
+      /* For every odd number button, Display cursor as pointer */
+      button:nth-of-type(even) {
+        background-color: #4c7fdd;
+      }
+
+      button:first-child {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+
+      button:last-child {
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      *:empty {
+        background-color: red;
+      }
+
+      /* For the button whih is at first position, Applying below styles */
+    </style>
+  </head>
+  <body>
+    <button>Button-1</button>
+    <button>Button-2</button>
+    <button>Button-3</button>
+    <button>Button-4</button>
+    <button></button>
+  </body>
+</html>
