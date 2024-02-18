@@ -46,7 +46,16 @@ The very important things to be considered while writing css are as below:
    <div class="box" id="header">Content</div>
    ```
 
-5. **Box Model**: The CSS box model describes the rectangular boxes that are generated for elements in the document tree. It consists of margin, border, padding, and content.
+5. **Margin and Padding**: Margin is the space outside an element, while padding is the space inside an element.
+
+   ```css
+   .box {
+     padding: 10px; /* Inside */
+     margin: 10px; /* Outside */
+   }
+   ```
+
+6. **Box Model**: The CSS box model describes the rectangular boxes that are generated for elements in the document tree. It consists of margin, border, padding, and content.
 
    ```css
    .box {
@@ -56,30 +65,25 @@ The very important things to be considered while writing css are as below:
    }
    ```
 
-6. **Margin and Padding**: Margin is the space outside an element, while padding is the space inside an element.
+7. **Pseudo-classes and Pseudo-elements**: Selectors that allow you to style elements based on their state or position in the document tree.
 
    ```css
-   .box {
-     padding: 10px; /* Inside */
-     margin: 10px; /* Outside */
+   /* Pseudo-class */
+   a:hover {
+     color: red;
+   }
+
+   /* Pseudo-element */
+   p::first-line {
+     font-weight: bold;
    }
    ```
 
-7. **Display Property**: Determines how an element is displayed.
+8. **Display Property**: Determines how an element is displayed.
 
    ```css
    .box {
      display: inline-block;
-   }
-   ```
-
-8. **Positioning**: Determines how an element is positioned within its parent container.
-
-   ```css
-   .box {
-     position: relative;
-     top: 20px;
-     left: 30px;
    }
    ```
 
@@ -91,7 +95,17 @@ The very important things to be considered while writing css are as below:
    }
    ```
 
-10. **Flexbox**: A layout model for arranging elements in a predictable way in different screen sizes and orientations.
+10. **Positioning**: Determines how an element is positioned within its parent container.
+
+    ```css
+    .box {
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+    ```
+
+11. **Flexbox**: A layout model for arranging elements in a predictable way in different screen sizes and orientations.
 
     ```css
     .container {
@@ -100,7 +114,7 @@ The very important things to be considered while writing css are as below:
     }
     ```
 
-11. **Grid**: A two-dimensional layout system that arranges elements into rows and columns.
+12. **Grid**: A two-dimensional layout system that arranges elements into rows and columns.
 
     ```css
     .container {
@@ -109,7 +123,7 @@ The very important things to be considered while writing css are as below:
     }
     ```
 
-12. **Media Queries**: Allows you to apply different styles for different screen sizes or devices.
+13. **Media Queries**: Allows you to apply different styles for different screen sizes or devices.
 
     ```css
     @media (max-width: 600px) {
@@ -119,7 +133,7 @@ The very important things to be considered while writing css are as below:
     }
     ```
 
-13. **Transitions**: Adds smooth animations to CSS property changes.
+14. **Transitions**: Adds smooth animations to CSS property changes.
 
     ```css
     .box {
@@ -127,25 +141,11 @@ The very important things to be considered while writing css are as below:
     }
     ```
 
-14. **Transforms**: Modify the appearance and position of elements using scaling, rotating, skewing, etc.
+15. **Transforms**: Modify the appearance and position of elements using scaling, rotating, skewing, etc.
 
     ```css
     .box {
       transform: rotate(45deg);
-    }
-    ```
-
-15. **Pseudo-classes and Pseudo-elements**: Selectors that allow you to style elements based on their state or position in the document tree.
-
-    ```css
-    /* Pseudo-class */
-    a:hover {
-      color: red;
-    }
-
-    /* Pseudo-element */
-    p::first-line {
-      font-weight: bold;
     }
     ```
 

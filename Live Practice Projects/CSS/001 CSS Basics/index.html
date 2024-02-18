@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+  </head>
+  <body>
+    <style>
+      /* #para1 => id="para1" */
+      #para1 {
+        color: red;
+        text-decoration: underline;
+      }
+      .yellowtext {
+        color: yellow;
+        background-color: black;
+      }
+    </style>
+
+    <!-- 
+      property =>
+       can be relate to an attribute
+       It is pair of stylename and style value
+       Ex: color: red;
+       color => style name
+       red => style value
+       `color: red;` => Style Property
+     -->
+
+    <!-- Browser looking for an element with id="para1"
+       because we gave the selector as #para1 -->
+    <!-- 
+        Attribute => class="para1 yellowtext"
+        class => attribute Name
+        "para11 yellowtext" => attribute value
+        -->
+
+    <p class="para1 yellowtext" id="para1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde architecto autem dolor rem
+      tempora dolore quo enim iure, sapiente ullam ratione, temporibus repellendus similique
+      repellat voluptate laudantium deserunt officiis cumque!
+    </p>
+
+    <p class="yellowtext" id="para2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde architecto autem dolor rem
+      tempora dolore quo enim iure, sapiente ullam ratione, temporibus repellendus similique
+      repellat voluptate laudantium deserunt officiis cumque!
+    </p>
+  </body>
+</html>

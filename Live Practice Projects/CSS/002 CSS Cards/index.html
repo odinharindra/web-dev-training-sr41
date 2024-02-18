@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cards</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .card {
+        width: 250px; /* 250px width */
+        height: 400px;
+        background-color: white;
+        border: 5px solid red; /* 5px border left, 5px border right => 10px */
+
+        padding: 16px; /* 16px padding left, 16px padding right => 32px */
+        text-align: left;
+        margin-left: 50px; /* 50px margin left */
+        margin-right: 50px; /* 50px margin right */
+
+        /* 250px + 10px + 32px = 292px */
+        /* 400px + 10px + 32px = 442px */
+      }
+
+      .card-2 {
+        box-sizing: border-box;
+      }
+
+      /* Advanced CSS topics related to positioning layout */
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div class="card">
+      <img
+        src="https://source.unsplash.com/400x300/?nature,water"
+        alt="Nature"
+        style="width: 100%"
+      />
+      <h1 style="text-align: left">Card Title</h1>
+      <h2 style="text-align: left">Sub title of my card</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="card card-2">
+      <img
+        src="https://source.unsplash.com/400x300/?nature,water"
+        alt="Nature"
+        style="width: 100%"
+      />
+      <h1 style="text-align: left">Card Title</h1>
+      <h2 style="text-align: leftl">Sub title of my card</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </body>
+</html>
