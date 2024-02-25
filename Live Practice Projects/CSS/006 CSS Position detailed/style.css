@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* 100% of the viewport height */
+  width: 100vw; /* 100% of the viewport width */
+  background-color: aquamarine;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.container-1,
+.container-2 {
+  width: 40vw;
+  height: 60vh;
+  border: 1px solid red;
+  position: relative;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.box-3 {
+  top: -60px;
+  left: 320px;
+  background-color: red;
+}
+
+.box-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container-2 .box-2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.container-1 .box-4 {
+  /* Make positioned center inside container 1 */
+  position: absolute;
+}
+
+/*
+
+static: default value, elements are positioned according to the normal flow of the document
+relative: elements are positioned relative to their normal position
+absolute: elements are positioned relative to the nearest positioned ancestor (Parent)
+fixed: elements are positioned relative to the viewport
+
+
+sticky: elements are positioned based on the user's scroll position
+
+*/
+
+/* Relative: */
