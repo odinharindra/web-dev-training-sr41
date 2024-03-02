@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Properties Example</title>
+    <style>
+      div {
+        min-height: 150px;
+        padding: 48px;
+      }
+      .container {
+        height: 300px;
+        position: relative;
+        border: 1px solid black;
+        margin-bottom: 20px;
+      }
+
+      .relative-element {
+        position: relative;
+        top: 20px;
+        left: 20px;
+        background-color: red;
+      }
+
+      .absolute-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: blue;
+        color: white;
+      }
+
+      .fixed-element {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: green;
+        color: white;
+      }
+
+      .sticky-element {
+        position: sticky;
+        top: 0;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="relative-element">Relative</div>
+      <div class="absolute-element">Absolute</div>
+      <div class="sticky-element">Sticky</div>
+    </div>
+
+    <div class="fixed-element">Fixed</div>
+  </body>
+</html>

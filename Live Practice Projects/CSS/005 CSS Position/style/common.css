@@ -1,0 +1,11 @@
+body {
+  background-image: url("../assets/pond.jpg");
+  background-size: 260%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
