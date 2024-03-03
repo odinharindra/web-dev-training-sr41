@@ -1,0 +1,38 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+}
+
+header,
+section,
+footer {
+  border: 2px solid rgb(163, 0, 227);
+  padding: 16px;
+  margin: 16px 0px;
+}
+
+div.row {
+  border: 2px solid rgb(255, 0, 0);
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+div.row:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+div.column {
+  border: 2px solid rgb(19, 55, 185);
+  padding: 16px;
+  flex: 1;
+}
