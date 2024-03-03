@@ -1,3 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+  --font-1: "Public Sans", Sans-serif;
+  --font-2: "Castoro", Serif;
+
+  --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+
+  /* Colors */
+  --color-1: hsla(12, 75%, 45%, 1);
+  --color-2: hsla(96, 10%, 19%, 1);
+  --color-3: hsla(0, 0%, 10%, 1);
+  --color-1-lightest: hsla(12, 75%, 75%, 1);
+  --color-1-lighter: hsla(12, 75%, 65%, 1);
+  --color-1-light: hsla(12, 75%, 55%, 1);
+  --color-1-dark: hsla(12, 75%, 35%, 1);
+  --color-1-darker: hsla(12, 75%, 25%, 1);
+  --color-1-darkest: hsla(12, 75%, 15%, 1);
+  --color-2-lightest: hsla(96, 10%, 49%, 1);
+  --color-2-lighter: hsla(96, 10%, 39%, 1);
+  --color-2-light: hsla(96, 10%, 29%, 1);
+  --color-2-dark: hsla(96, 10%, 10%, 1);
+  --color-2-darker: hsla(96, 10%, 1%, 1);
+  --color-3-light: hsla(0, 0%, 16%, 1);
+  --color-3-dark: hsla(0, 0%, 8%, 1);
+  --color-error: hsla(359, 100%, 91%, 1);
+  --color-success: hsla(76, 69%, 68%, 1);
+  --color-info: hsla(205, 82%, 91%, 1);
+  --color-notice: hsla(51, 100%, 80%, 1);
+  --color-error-content: hsla(359, 50%, 50%, 1);
+  --color-success-content: hsla(76, 29%, 28%, 1);
+  --color-info-content: hsla(205, 32%, 31%, 1);
+  --color-notice-content: hsla(51, 30%, 30%, 1);
+  --color-black: #000000;
+  --color-gray-19: #181818;
+  --color-gray-18: #2f302f;
+  --color-gray-17: #474747;
+  --color-gray-16: #5e5f5e;
+  --color-gray-15: #767776;
+  --color-gray-14: #8e8f8e;
+  --color-gray-13: #a5a7a5;
+  --color-gray-12: #bdbebd;
+  --color-gray-11: #d4d6d4;
+  --color-gray-10: #eceeec;
+  --color-gray-9: #eef0ee;
+  --color-gray-8: #f0f1f0;
+  --color-gray-7: #f2f3f2;
+  --color-gray-6: #f4f5f4;
+  --color-gray-5: #f6f7f6;
+  --color-gray-4: #f7f8f7;
+  --color-gray-3: #f9faf9;
+  --color-gray-2: #fbfcfb;
+  --color-gray-1: #fbfcfb;
+  --color-white: #ffffff;
+  --color-text: var(--color-gray-19);
+  --color-text-dark: var(--color-3-dark);
+  --color-text-light: var(--color-gray-15);
+  --color-placeholder: var(--color-gray-13);
+  --color-link: var(--color-1);
+  --color-link-hover: var(--color-2-lighter);
+  --color-link-active: var(--color-2-lighter);
+  --color-btn: var(--color-gray-10);
+  --color-btn-text: var(--color-text);
+  --color-btn-hover: var(--color-gray-11);
+  --color-btn-hover-text: var(--color-text);
+  --color-btn-primary: var(--color-1);
+  --color-btn-primary-text: var(--color-white);
+  --color-btn-primary-hover: var(--color-1-light);
+  --color-btn-primary-hover-text: var(--color-white);
+  --color-btn-stroke: var(--color-text-dark);
+  --color-btn-stroke-text: var(--color-text-dark);
+  --color-btn-stroke-hover: var(--color-text-dark);
+  --color-btn-stroke-hover-text: var(--color-white);
+  --color-preloader-bg: var(--color-gray-10);
+  --color-loader: var(--color-3);
+  --color-loader-light: var(--color-gray-14);
+  --color-body-bg: var(--color-gray-1);
+  --color-border: rgba(0, 0, 0, 0.1);
+  --border-radius: 5px;
+}
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -8,7 +89,36 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 16px;
-  font-family: Lato, sans-serif;
+  font-family: var(--font-1);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-2);
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 40px;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.column {
+  flex: 1;
+}
+
+body > section,
+footer {
+  padding-top: 224px;
 }
 
 .container {
@@ -18,10 +128,42 @@ body {
   padding: 0px 24px;
 }
 
+.section-heading {
+  position: relative;
+  display: block;
+  height: 200px;
+  line-height: 1.02;
+}
+
+.section-count,
+.heading-text {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-count {
+  font-size: 172px;
+  color: var(--color-gray-11);
+  font-weight: 600;
+  left: -17px;
+  opacity: 0.5;
+  top: 47.5%;
+  user-select: none;
+}
+
+.heading-text {
+  margin: 0px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
 header .container {
   margin: 24px auto;
   height: 72px;
   background-color: rgb(26, 26, 26);
+  color: white;
   padding: 0px 26px; /* 1rem => 1 * root element font-size; 16px */
   display: flex;
   align-items: center;
@@ -32,3 +174,80 @@ header .container img {
   width: 102px;
   height: auto;
 }
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link-list {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-gray-14);
+}
+
+.nav-link:hover {
+  color: var(--color-white);
+}
+
+/* Styles for Intro section */
+section#intro {
+  min-height: 80vh;
+  width: 100%;
+  background-color: var(--color-gray-13);
+}
+/* Styles for Inter section - Ends */
+
+/* Styles for About section */
+.about-me-card {
+  position: relative;
+}
+.about-me-card .card-title {
+  font-size: 28.8px;
+  font-weight: 300;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.25rem;
+}
+
+.about-me-card .card-title::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 4px;
+  height: 1.5rem;
+  background-color: var(--color-1);
+}
+
+.about-me-card ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 2rem;
+}
+
+.about-me-card ul li {
+  margin-bottom: 20px;
+}
+
+.about-me-card ul li .__name {
+  line-height: 2rem;
+  font-weight: 300;
+  color: var(--color-3);
+  font-size: 21px;
+}
+
+.about-me-card ul li .__description {
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--color-text-light) !important;
+}
+
+/* .about-me-card.skills {
+  flex: 2;
+} */
+/* Styles for About section - Ends */
