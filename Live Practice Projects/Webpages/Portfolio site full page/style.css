@@ -103,6 +103,13 @@ p {
   line-height: 40px;
   margin-bottom: 2rem;
   font-weight: 300;
+  margin-top: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .row {
@@ -124,9 +131,15 @@ footer {
 .container {
   display: block;
   margin: 0px auto;
-  max-width: 1240px;
+  max-width: 1378px;
   padding: 0px 24px;
 }
+
+.text-center {
+  text-align: center;
+}
+
+/* *************** Section Heading Styles ************** */
 
 .section-heading {
   position: relative;
@@ -158,9 +171,18 @@ footer {
   font-size: 50px;
   font-weight: 400;
 }
+/* *************** Section Heading Styles End ************** */
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 0px;
+}
 
 header .container {
-  margin: 24px auto;
   height: 72px;
   background-color: rgb(26, 26, 26);
   color: white;
@@ -194,11 +216,11 @@ header .container img {
 }
 
 /* Styles for Intro section */
-section#intro {
+/* section#intro {
   min-height: 80vh;
   width: 100%;
   background-color: var(--color-gray-13);
-}
+} */
 /* Styles for Inter section - Ends */
 
 /* Styles for About section */
@@ -251,3 +273,275 @@ section#intro {
   flex: 2;
 } */
 /* Styles for About section - Ends */
+
+/* Styles for Into section */
+
+section#intro {
+  width: 100%;
+  padding: 0;
+  background-color: var(--color-gray-10);
+}
+
+.intro-container {
+  height: 103vh;
+  width: 100%;
+}
+
+.right-half {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 50%;
+  background-image: url("./assets/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Horizontal: left | center | right */
+  /* Vertical: top | center | bottom */
+  background-position: center center;
+}
+
+.intro-content-box {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-bottom: 78px;
+}
+
+.intro-content-box .floating-action-links-group {
+  position: absolute;
+  right: 0px;
+  bottom: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 90px;
+}
+
+.social-links {
+  padding: 0;
+  list-style: none;
+}
+.social-links::after {
+  content: "";
+  color: white;
+  height: 80px;
+  width: 1px;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+}
+
+.social-links li {
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.scroll-to-bottom {
+  background: none;
+  border: 1px solid white;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+}
+
+.intro-heading {
+  display: block;
+  max-width: 50%;
+  padding-right: 1.5rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.15em;
+}
+
+.hero-heading {
+  font-size: clamp(3.8rem, 4.8vw, 8.8rem);
+  line-height: 1.045;
+  letter-spacing: -0.025em;
+  margin-top: 0;
+  font-weight: 400 !important;
+}
+
+.intro-heading span.greeting {
+  color: var(--color-1);
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: var(--font-1);
+}
+
+.intro-cta-group {
+  /* height: 150px; */
+  column-gap: 8rem;
+}
+
+.intro-cta-group .cta-link {
+  display: inline-block;
+  border: 1.5px solid black;
+  background-color: transparent;
+  height: 54px;
+  padding: 0px 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 0.75rem;
+  font-family: var(--font-1);
+  letter-spacing: 3.6px;
+  color: black;
+  font-weight: 500;
+  transition: 300ms all ease-in-out;
+}
+
+.intro-cta-group .cta-link:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.cta-link.primary {
+  background-color: black;
+  color: white;
+}
+
+.cta-link.primary:hover {
+  background-color: var(--color-1);
+  border-color: var(--color-1);
+}
+
+.cta-link.outlined-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.cta-link.ouyline-inverted {
+  border-color: white;
+  color: white;
+}
+
+.cta-link.ouyline-inverted:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: #fff;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cta-link.ouyline-inverted:hover {
+  background-color: white;
+  color: black;
+}
+
+/* 1 minute = 60 Seconds, 1 Second = 1000 milli seconds */
+/* Styles for Intro section - Ends */
+
+/* Styles for Section 2 */
+.folios {
+  gap: 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+.folio-card {
+  flex-basis: 50%;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.folios .folio-card:not(:hover) .folio-description-overlay {
+  display: none;
+}
+
+.folio-description-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  aspect-ratio: 1;
+
+  background-color: var(--color-3-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.folio-description-overlay .description-container {
+  text-align: center;
+  color: white;
+}
+
+.folio-description-overlay .description-container p {
+  margin: 0;
+}
+
+.folio-description-overlay .description-container p.description {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--color-gray-15);
+}
+
+.testimonial-cards {
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+}
+
+.testimonial-card {
+  row-gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+
+.testimonial-author.row {
+  gap: 24px;
+  align-items: center;
+}
+
+.testimonial-author p {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+.testimonial-author p.author-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--color-gray-15);
+}
+
+.testimonial-author .avtar {
+  max-width: 56px;
+}
+
+.testimonial-author .avtar img {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: 56px;
+}
+
+.testimonial-content p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/* Styles for Section 2 Ends */
