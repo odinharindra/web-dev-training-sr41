@@ -1,0 +1,56 @@
+/* General Styles */
+
+/* * {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  padding: 20px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* header,
+aside,
+main,
+footer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+} */
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+/* @media screen and (min-width: 769px) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+    grid-template-columns: 100fr 400fr;
+    grid-template-rows: auto calc(100% - (146px + 124px)) auto;
+    gap: 20px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+} */

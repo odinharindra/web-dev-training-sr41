@@ -1,0 +1,54 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px 20px;
+}
+header,
+aside,
+main,
+footer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 16px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  /* Desktop layout */
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas:
+      "header header"
+      "aside main"
+      "footer footer";
+    gap: 20px;
+  }
+  header {
+    grid-area: header;
+  }
+  aside {
+    grid-area: aside;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
+@media (max-width: 767px) {
+  /* Mobile layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  header,
+  aside,
+  main,
+  footer {
+    order: 2; /* Change the order of elements for mobile layout */
+  }
+}
