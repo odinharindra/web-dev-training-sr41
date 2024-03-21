@@ -1,0 +1,10 @@
+   Running as harindraodinschool@gmail.com (Student)
+
+        project: /Users/harindramasna/Documents/Odinschool/odin_trainings/web-dev-training-sr41/Live Practice Projects/Web Components/Video Player Application/src/
+         domain: harindradev94-custom-video-player.surge.sh
+         upload: [====================] 100% eta: 0.0s (3 files, 9141 bytes)
+            CDN: [====================] 100%
+     encryption: *.surge.sh, surge.sh (59 days)
+             IP: 138.197.235.123
+
+   Success! - Published to harindradev94-custom-video-player.surge.sh
