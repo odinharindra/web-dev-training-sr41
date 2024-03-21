@@ -1,0 +1,144 @@
+:root {
+  --primary: rgb(136, 29, 201);
+  --secondary: rgb(254, 137, 4);
+  --fallback: rgb(75, 75, 75);
+  --light-bg: lightgray;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.video-progress {
+  width: 100%;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+video {
+  border-radius: 01rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress-track,
+.progress-elapsed {
+  width: 100%;
+  height: 16px;
+  border-radius: 16px;
+}
+
+.progress-track {
+  background: var(--light-bg);
+  overflow: hidden;
+}
+
+.progress-elapsed {
+  width: 0%;
+  background: var(--primary);
+  transition: all 0.3s linear;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 0.5rem;
+}
+
+.video-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-and-volume,
+.playback-elapsed-duration {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.play-and-volume {
+  justify-content: flex-start;
+  width: 35%;
+  position: relative;
+}
+
+.volume-controls {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.playback-elapsed-duration {
+  justify-content: flex-end;
+}
+
+.volume-level-control {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  height: 8px;
+  justify-content: flex-start;
+}
+
+.volume-track,
+.volume-level {
+  width: 100%;
+  height: 8px;
+  border-radius: 8px;
+}
+
+.volume-track {
+  background: var(--light-bg);
+}
+
+.volume-level {
+  width: 100%;
+  background: var(--fallback);
+  transition: all 0.3s linear;
+}
+
+button {
+  color: var(--fallback);
+  border: 0;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  line-height: 1;
+  border-radius: 0.2rem;
+}
+
+select {
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  background-color: var(--light-bg);
+  font-size: 1rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+}
+
+.video-duration {
+  font-size: 1.125rem;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
