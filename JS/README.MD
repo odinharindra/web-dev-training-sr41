@@ -1,8 +1,8 @@
-### Javascript (Zero to Heroß)
+### Javascript (Zero to Hero)
 
 ### Part 1: Fundamentals
 
-1. **Introduction to JavaScriptß**
+1. **Introduction to JavaScript**
 
    - What is JavaScript?
    - Brief history and its role in web development.
@@ -21,33 +21,34 @@
    - Comparison operators (==, ===, !=, !==, >, <, >=, <=).
    - Logical operators (&&, ||, !).
 
-4. **Control Structures**
-   - if...else statements.ß
-   - switch...case statements.
-   - for loops.
-   - while loops.
-
 ### Part 2: Functions and Data Structures
 
-5. **Functions**
+4. **Arrays**
+
+   - Declaration and initialization.
+   - Accessing and modifying elements.
+   - Array methods (push, pop, shift, unshift, splice, slice).
+
+5. **Objects**
+
+   - Object literals.
+   - Accessing object properties.
+   - Adding and modifying properties.
+   - Object methods.
+
+6. **Functions**
 
    - Declaration and invocation.
    - Parameters and arguments.
    - Return statements.
    - Function expressions and arrow functions.
 
-6. **Arrays**
+7. **Control Structures**
 
-   - Declaration and initialization.
-   - Accessing and modifying elements.
-   - Array methods (push, pop, shift, unshift, splice, slice).
-
-7. **Objects**
-
-   - Object literals.
-   - Accessing object properties.
-   - Adding and modifying properties.
-   - Object methods.
+   - if...else statements.
+   - switch...case statements.
+   - for loops.
+   - while loops.
 
 8. **Scope and Closures**
    - Understanding scope (global vs. local).
