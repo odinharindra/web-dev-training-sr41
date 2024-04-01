@@ -1,5 +1,13 @@
 ## DOM Manipulation
 
+```txt
+Table of contents:
+1. Introduction to DOM Manipulation
+2. DOM manipulations API reference
+```
+
+## 1. Introduction
+
 JavaScript DOM manipulation refers to the process of interacting with the Document Object Model (DOM), which represents the structure of an HTML document as a tree-like structure of nodes. DOM manipulation allows you to access, modify, add, or remove elements and their attributes dynamically, thereby updating the content and appearance of a web page in response to user actions or other events.
 
 Here's a brief explanation with a few examples:
@@ -85,3 +93,7 @@ Example:
 ```
 
 These are just a few basic examples of JavaScript DOM manipulation. With DOM manipulation techniques, you can create dynamic and interactive web pages that respond to user actions and provide a better user experience.
+
+## 2. API reference
+
+[Check here](./007%2001%20DOM%20Manipulation%20methods/)
