@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  width: 100vw;
+
+  background-color: #222222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* align-items: flex-start;
+  justify-content: center; */
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#todo_form {
+  width: 450px;
+  max-width: 90vw;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+#todo_form input {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0px;
+}
+
+#todo_form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(11, 62, 200);
+  color: whitesmoke;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+ul#todos_list {
+  width: 450px;
+  max-width: 90vw;
+  color: whitesmoke;
+  list-style: none;
+  padding: 0;
+}
+
+ul#todos_list li {
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+  background-color: whitesmoke;
+  color: #222222;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todos_list li button {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0.25rem;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.todos_list li button:hover {
+  background-color: #e5e5e5;
+}
