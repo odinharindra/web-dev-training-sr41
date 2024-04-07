@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        position: relative;
+      }
+      #demo_gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      }
+
+      #demo_gallery img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="" id="demo_gallery">
+      <p>No Gallery list available</p>
+      <button onclick="fetchGalleryItems()">Fetch Gallery items</button>
+    </div>
+    <script>
+      function fetchGalleryItems() {
+        fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (responseJson) {
+            console.log({ responseJson });
+            let gallery = document.getElementById("demo_gallery");
+            gallery.innerHTML = "";
+            responseJson.forEach(function (photo) {
+              let img = document.createElement("img");
+              img.src = photo.thumbnailUrl;
+              gallery.appendChild(img);
+            });
+          })
+          .catch(function (error) {
+            console.log({ error });
+          });
+      }
+    </script>
+  </body>
+</html>

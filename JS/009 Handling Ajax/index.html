@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Fetching Data with AJAX</h1>
+    <div id="output"></div>
+
+    <script>
+      // Create an XMLHttpRequest object
+      let xhr = new XMLHttpRequest();
+
+      // Define a callback function to handle the response
+      xhr.onreadystatechange = function () {
+        console.log("xhr.readyState: ", xhr.readyState);
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          console.log("Reacting to XHR state change...");
+          if (xhr.status === 200) {
+            // Request was successful, update the output
+            document.getElementById("output").innerHTML = xhr.responseText;
+          } else {
+            // Request failed, display an error message
+            document.getElementById("output").innerHTML = "Error: " + xhr.status;
+          }
+        }
+      };
+
+      // Open a GET request to the server
+      xhr.open("GET", "https://jsonplaceholder.typicode.com/posts?userId=10", true);
+
+      // Send the request
+      xhr.send();
+    </script>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>
+
+<!-- 
+  Informational: 1XX
+  Succsss: 2XX
+  Redirection: 3XX
+  Client Error: 4XX (Client is nothing but Our machine)
+  Server Error: 5XX (Server is nothing but the server from which we are fetching the data)
+ -->
