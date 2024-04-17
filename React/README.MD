@@ -1,6 +1,6 @@
 # Welcome to React
 
-![react.png](./react_js.jpg)
+![react.png](react_js.jpg)
 
 React is an open-source JavaScript library for building user interfaces, primarily for web applications. It was developed and is maintained by Facebook. React's key features make it a popular choice for building modern, interactive, and dynamic web applications:
 
