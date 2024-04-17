@@ -27,7 +27,7 @@ const playbackSpeedEl = document.getElementById("playback_speed_selector");
  * Retrieves the element with the id "fullscreen_request" from the document.
  * @returns The element with the id "fullscreen_request" or null if not found.
  */
-const fullscreenRequestBtn = document.getElementById("fullscreen_request");
+const ab = document.getElementById("fullscreen_request");
 
 /**
  * Retrieves the DOM element with the id "volume-range-track".
@@ -106,7 +106,7 @@ playbackSpeedEl.addEventListener("change", () => {
  * @param {Function} () => { videoEl.requestFullscreen(); } - The function to execute when the event occurs, requesting fullscreen mode for the video element.
  * @returns None
  */
-fullscreenRequestBtn.addEventListener("click", () => {
+ab.addEventListener("click", () => {
   videoEl.requestFullscreen();
 });
 
@@ -126,10 +126,25 @@ setInterval(() => {
   const elapsedMinutes = Math.floor(currentTime / 60);
   const elapsedSeconds = Math.floor(currentTime % 60);
 
+  const isplaying = !videoEl.paused;
+  const isMuted = videoEl.muted;
+
   currentTimeEl.innerText = `${elapsedMinutes}:${elapsedSeconds}`;
   durationEl.innerText = `${totalMinutes}:${totalSeconds}`;
 
   const videoVolume = videoEl.volume;
+
+  if (isplaying) {
+    playPauseBtn.classList.add("playing");
+  } else {
+    playPauseBtn.classList.remove("playing");
+  }
+
+  if (isMuted) {
+    muteUnmuteBtn.classList.add("muted");
+  } else {
+    muteUnmuteBtn.classList.remove("muted");
+  }
 
   videoProgressTrackEl.style.width = `${progress}%`;
   volumeRangeTrackEl.style.width = `${videoVolume * 100}%`;
