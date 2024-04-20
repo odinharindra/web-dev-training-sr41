@@ -16,7 +16,7 @@ By the way, React is used to develop [Single Page Application](<./Understanding%
    - React uses a Virtual DOM, which is a lightweight representation of the actual DOM.
    - When a component's state changes, React efficiently updates only the necessary parts of the DOM using the Virtual DOM, resulting in improved performance.
 
-3. **JSX**:
+3. **JSX**: [Learn More](./002%20Understanding%20JSX/)
 
    - JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript code.
    - JSX makes it easier to create and manage UI components in a declarative and readable way.
